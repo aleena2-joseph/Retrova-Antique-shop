@@ -6,7 +6,10 @@ define('DB_NAME', 'retrova');
 define('DB_USER', 'root');
 define('DB_PASS', '');
 
-define('BASE_URL', '/Retrova');
+// Auto-detect BASE_URL based on the actual directory structure
+$scriptDir = dirname($_SERVER['SCRIPT_NAME']);
+$baseUrl = ($scriptDir === '/' || $scriptDir === '\\') ? '' : $scriptDir;
+define('BASE_URL', $baseUrl);
 
 define('RAZORPAY_KEY_ID', 'rzp_test_RV0yV2urkxFXQM');
 define('RAZORPAY_KEY_SECRET', 'i2JCvv7IVXYIpcveFE649JPG');

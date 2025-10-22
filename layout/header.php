@@ -446,12 +446,12 @@ require_once __DIR__ . '/../functions.php';
         </li>
         <?php if (isLoggedIn()): ?>
           <?php if (isAdmin()): ?>
-            <li class="nav-item"><a class="nav-link vintage-nav-link" href="<?php echo BASE_URL; ?>./admin/index.php">Admin</a></li>
+            <li class="nav-item"><a class="nav-link vintage-nav-link" href="<?php echo BASE_URL; ?>/admin/index.php">Admin</a></li>
           <?php endif; ?>
-          <li class="nav-item"><a class="nav-link vintage-nav-link" href="<?php echo BASE_URL; ?>./logout.php">Logout</a></li>
+          <li class="nav-item"><a class="nav-link vintage-nav-link" href="<?php echo BASE_URL; ?>/logout.php">Logout</a></li>
         <?php else: ?>
-          <li class="nav-item"><a class="nav-link vintage-nav-link" href="<?php echo BASE_URL; ?>../login.php">Login</a></li>
-          <li class="nav-item"><a class="nav-link vintage-nav-link" href="<?php echo BASE_URL; ?>./register.php">Register</a></li>
+          <li class="nav-item"><a class="nav-link vintage-nav-link" href="<?php echo BASE_URL; ?>/login.php">Login</a></li>
+          <li class="nav-item"><a class="nav-link vintage-nav-link" href="<?php echo BASE_URL; ?>/register.php">Register</a></li>
         <?php endif; ?>
       </ul>
     </div>
